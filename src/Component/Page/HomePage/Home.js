@@ -1,5 +1,6 @@
 import React from 'react';
 import Banner from '../Banner/Banner';
+import ContactForm from '../ContactForm/ContactForm';
 import Projects from '../Projects/Projects';
 import Skills from '../Skill/Skills';
 
@@ -10,6 +11,7 @@ const Home = () => {
             <Banner />
             <Skills />
             <Projects />
+            <ContactForm />
         </div>
     );
 };
