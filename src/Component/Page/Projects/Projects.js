@@ -16,9 +16,9 @@ const Projects = () => {
                         <p>This project is a shopping site where people can sell and buy their products</p>
                         <div className="btn">More About this project</div>
                         <div className="card-actions justify-evenly mt-4">
-                            <a className="btn">Live Site</a>
-                            <a className="btn">FrontEnd</a>
-                            <a className="btn ">BackEnd</a>
+                            <a href='https://puranabazar-4dd34.web.app/' className="btn">Live Site</a>
+                            <a href='https://github.com/ArkoRoyBadhon/puran-bazar-frontend' className="btn">FrontEnd</a>
+                            <a href='https://github.com/ArkoRoyBadhon/puran-bazar-server' className="btn ">BackEnd</a>
                         </div>
                     </div>
                 </div>
