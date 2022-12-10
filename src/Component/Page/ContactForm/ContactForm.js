@@ -19,10 +19,10 @@ const ContactForm = () => {
     }
 
     return (
-        <div className='my-16'>
+        <div className='my-16' id="contact-form">
             <div className="min-w-screen-lg">
 
-                <div className="card w-[50rem] bg-base-100 shadow-xl mx-auto">
+                <div className="card md:w-[50rem] bg-base-100 shadow-xl mx-auto">
                     <div className="card-body">
                         <h4 className="text-3xl font-bold text-center">Contact Form</h4>
                         <form ref={form} onSubmit={sendEmail} className='px-10 pb-16 pt-10'>

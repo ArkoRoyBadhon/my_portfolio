@@ -3,11 +3,11 @@ import { a } from 'react-router-dom';
 
 const Projects = () => {
     return (
-        <div className='my-10'>
+        <div className='my-10' id="projects">
             <h3 className="text-3xl font-bold text-center my-10">My Projects</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                 <div className="card w-full bg-base-100 shadow-xl">
-                    <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure>
+                    {/* <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure> */}
                     <div className="card-body">
                         <h2 className="card-title">
                             Purana Bazar
@@ -23,12 +23,12 @@ const Projects = () => {
                     </div>
                 </div>
                 <div className="card w-full bg-base-100 shadow-xl">
-                    <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure>
+                    {/* <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure> */}
                     <div className="card-body">
                         <a href="https://cooking-corner-69041.web.app/" className="card-title">
                             Cooking Corner
                         </a>
-                        <p>This project is a shopping site where people can sell and buy their products</p>
+                        <p>This project is a cooking based project</p>
                         <div className="btn">More About this project</div>
                         <div className="card-actions justify-evenly mt-4">
                             <a href='https://cooking-corner-69041.web.app/' className="btn">Live Site</a>
@@ -38,12 +38,12 @@ const Projects = () => {
                     </div>
                 </div>
                 <div className="card w-full bg-base-100 shadow-xl">
-                    <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure>
+                    {/* <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure> */}
                     <div className="card-body">
                         <h2 className="card-title">
                             Knowledge House
                         </h2>
-                        <p>This project is a shopping site where people can sell and buy their products</p>
+                        <p>This project is a category wise education viewer website.</p>
                         <div className="btn">More About this project</div>
                         <div className="card-actions justify-evenly mt-4">
                             <a href='https://knowledgehouse-6c03b.web.app/' className="btn">Live Site</a>
@@ -53,12 +53,12 @@ const Projects = () => {
                     </div>
                 </div>
                 <div className="card w-full bg-base-100 shadow-xl">
-                    <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure>
+                    {/* <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure> */}
                     <div className="card-body">
                         <h2 className="card-title">
                             Quiz Mania
                         </h2>
-                        <p>This project is a shopping site where people can sell and buy their products</p>
+                        <p>This project is a quiz website. user can give a quiz in short question.</p>
                         <div className="btn">More About this project</div>
                         <div className="card-actions justify-evenly mt-4">
                             <a href='https://quiz-mania-arko.netlify.app' className="btn">Live Site</a>

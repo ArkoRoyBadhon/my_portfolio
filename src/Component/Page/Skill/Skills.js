@@ -2,7 +2,7 @@ import React from 'react';
 
 const Skills = () => {
     return (
-        <div className='my-10'>
+        <div className='my-10 mx-5' id='skills'>
             <h3 className="text-3xl font-bold text-center">My Skills</h3>
             <h4 className="text-2xl font-bold mt-5">Expertise</h4>
             <p>HTML5, CSS3, Bootstrap, Tailwind CSS, Daisy Ui, JavaScript, React JS </p>
