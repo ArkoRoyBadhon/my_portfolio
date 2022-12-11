@@ -62,7 +62,6 @@ const ContactForm = () => {
             <MessengerCustomerChat
                 pageId="100088257536489"
                 appId="870290150669273"
-                htmlRef="<REF_STRING>"
             />
         </>
     );
