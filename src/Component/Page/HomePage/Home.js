@@ -7,12 +7,18 @@ import Navbar from './Navbar';
 
 const Home = () => {
     return (
-        <div className='max-w-screen-lg mx-auto'>
-            <Navbar />
+        // <div className='max-w-screen-lg mx-auto'>
+        <div>
+            <div className="">
+                <Navbar />
+            </div>
+            <br />
             <Banner />
-            <Skills />
-            <Projects />
-            <ContactForm />
+            <div className='max-w-screen-lg mx-auto pt-20'>
+                <Skills />
+                <Projects />
+                <ContactForm />
+            </div>
         </div>
     );
 };

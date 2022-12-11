@@ -1,0 +1,154 @@
+[
+    {
+        "id": 1,
+        "name": "Purana Bazar",
+        "short_description": "Purana Bazar is a Shopping website. Where people can buy and sell their old refrigertators.",
+        "img": "./assets/Screenshot (53).png",
+        "img2": "./assets/Screenshot (55).png",
+        "img3": "./assets/Screenshot (56).png",
+        "live_site": "https://puranabazar-4dd34.web.app/",
+        "client_site": "https://github.com/ArkoRoyBadhon/puran-bazar-frontend",
+        "server_side": "https://github.com/ArkoRoyBadhon/puran-bazar-server",
+        "features": [
+            {"list": "There are three types of user can login or sign up"},
+            {
+                "list": "Users are - admin, seller and buyer"
+            },
+            {
+                "list": "Admin can monitor sellers and buyers and can verify sellers"
+            },
+            {
+                "list": "Sellers can add products. Add his products to advertise. Can see his all Products."
+            },
+            {
+                "list": "Buyers can buy products and after buying a product automatically updated the database and show others sold."
+            },
+            {
+                "list": "Dark mode Implemented"
+            },
+            {
+                "list": "Fully mobile and desktop responsive"
+            }
+            
+        ],
+        "technology": [
+            {"list": "Html5"},
+            {"list": "CSS3"},
+            {"list": "Tailwind CSS"},
+            {"list": "React Js"},
+            {"list": "MongoDB"},
+            {"list": "Express"},
+            {"list": "Stripe"},
+            {"list": "JWT Token"},
+            {"list": "React hook form"},
+            {"list": "React Hot Toast"},
+            {"list": "Axios"},
+            {"list": "TanStack"},
+            {"list": "AOS animation"},
+            {"list": "Firebase Authentication"}
+            
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Cooking Corner",
+        "short_description": "This a Home made food order website. Here user finds various delicious home food at very affordable price",
+        "img": "./assets/Screenshot (50).png",
+        "img2": "./assets/Screenshot (57).png",
+        "img3": "./assets/Screenshot (58).png",
+        "live_site": "https://cooking-corner-69041.web.app/",
+        "client_site": "https://github.com/ArkoRoyBadhon/Cooking-corner-client-public",
+        "server_side": "https://github.com/ArkoRoyBadhon/Cooking-corner-server-public",
+        "features": [
+            {"list": "Users can Signup and SignIn"},
+            {
+                "list": "User can review food items"
+            },
+            {
+                "list": "New Product can be add"
+            },
+            {
+                "list": "Fully mobile and desktop responsive"
+            }
+            
+        ],
+        "technology": [
+            {"list": "Html5"},
+            {"list": "CSS3"},
+            {"list": "Tailwind CSS"},
+            {"list": "React Js"},
+            {"list": "MongoDB"},
+            {"list": "Express"},
+            {"list": "JWT Token"},
+            {"list": "React Hot Toast"},
+            {"list": "Firebase Authentication"}
+            
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Knowledge House",
+        "short_description": "This is a educational course based website. In this website user can search food by category.",
+        "img": "./assets/Screenshot (51).png",
+        "img2": "./assets/Screenshot (59).png",
+        "img3": "./assets/Screenshot (60).png",
+        "live_site": "https://knowledgehouse-6c03b.web.app/",
+        "client_site": "https://github.com/ArkoRoyBadhon/Knowledge-house-client-public",
+        "server_side": "https://github.com/ArkoRoyBadhon/Knowledge-house-server-public",
+        "features": [
+            {"list": "Users can SignUp and SignIn with email password or using other social platforms"},
+            {
+                "list": "Users can see courses according to course category"
+            },
+            {
+                "list": "Only logged users are able to click get premium access"
+            },
+            {
+                "list": "Fully mobile and desktop responsive"
+            }
+            
+        ],
+        "technology": [
+            {"list": "Html5"},
+            {"list": "CSS3"},
+            {"list": "Tailwind CSS"},
+            {"list": "React Js"},
+            {"list": "MongoDB"},
+            {"list": "Express"},
+            {"list": "React Hot Toast"},
+            {"list": "Firebase Authentication"}
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Quiz Mania",
+        "short_description": "Quiz mania is a prototype of a quiz website.",
+        "img": "./assets/Screenshot (52).png",
+        "img2": "./assets/Screenshot (61).png",
+        "img3": "./assets/Screenshot (62).png",
+        "live_site": "https://quiz-mania-arko.netlify.app/",
+        "client_site": "https://github.com/ArkoRoyBadhon/quiz-mania-public",
+        "server_side": "",
+        "features": [
+            {"list": "Users can select a topic to give a quiz"},
+            {
+                "list": "if a questions ans click and it is true then backgeound will be green otherwise background turn red."
+            },
+            {
+                "list": "A Bar chart implemented"
+            },
+            {
+                "list": "Fully mobile and desktop responsive"
+            }
+            
+            
+        ],
+        "technology": [
+            {"list": "Html5"},
+            {"list": "CSS3"},
+            {"list": "Tailwind CSS"},
+            {"list": "React Js"},
+            {"list": "React Toastify"}
+        ]
+    }
+]

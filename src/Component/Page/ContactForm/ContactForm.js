@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import toast from 'react-hot-toast';
-import MessengerCustomerChat from 'react-messenger-customer-chat';
+// import MessengerCustomerChat from 'react-messenger-customer-chat';
 
 
 const ContactForm = () => {
@@ -21,7 +21,7 @@ const ContactForm = () => {
 
     return (
         <>
-            <div className='my-16' id="contact-form">
+            <div className='' id="contact-form">
                 <div className="min-w-screen-lg">
 
                     <div className="card md:w-[50rem] bg-base-100 shadow-xl mx-auto">
@@ -58,11 +58,13 @@ const ContactForm = () => {
                     </div>
 
                 </div>
+
+                {/* <MessengerCustomerChat
+                    pageId="100088257536489"
+                    appId="870290150669273"
+                /> */}
             </div>
-            <MessengerCustomerChat
-                pageId="100088257536489"
-                appId="870290150669273"
-            />
+
         </>
     );
 };

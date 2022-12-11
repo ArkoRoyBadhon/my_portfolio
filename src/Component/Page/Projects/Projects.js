@@ -1,71 +1,54 @@
-import React from 'react';
-import { a } from 'react-router-dom';
+import React, { useContext, useEffect, useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+import FeatureContext, { featureProvider } from '../../Context/FeatureContext';
+
+
 
 const Projects = () => {
+    const [projects, setProjects] = useState([]);
+    const {setSingleProject} = useContext(featureProvider)
+
+    const navigate = useNavigate();
+
+    const handleDetail = (id, project) => {
+        setSingleProject(project);
+        navigate('/details')
+    }
+
+
+    useEffect(() => {
+        fetch('project.json')
+            .then(res => res.json())
+            .then(data => setProjects(data))
+            .catch(err => console.log(err.message))
+    }, [])
+
+    // console.log(projects);
+
     return (
-        <div className='my-10' id="projects">
+        <div className='my-20' id="projects">
             <h3 className="text-3xl font-bold text-center my-10">My Projects</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-                <div className="card w-full bg-base-100 shadow-xl">
-                    {/* <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure> */}
-                    <div className="card-body">
-                        <h2 className="card-title">
-                            Purana Bazar
-                            <div className="badge badge-secondary">Best Project</div>
-                        </h2>
-                        <p>This project is a shopping site where people can sell and buy their products</p>
-                        <div className="btn">More About this project</div>
-                        <div className="card-actions justify-evenly mt-4">
-                            <a href='https://puranabazar-4dd34.web.app/' className="btn">Live Site</a>
-                            <a href='https://github.com/ArkoRoyBadhon/puran-bazar-frontend' className="btn">FrontEnd</a>
-                            <a href='https://github.com/ArkoRoyBadhon/puran-bazar-server' className="btn ">BackEnd</a>
+                {
+                    projects?.map((project, i) => <div key={i} className="card w-full bg-base-100 shadow-xl">
+                        <figure><img src={project.img} alt="" /></figure>
+                        <div className="card-body">
+                            <h2 className="card-title">
+                                {project.name}
+                            </h2>
+                            <p>{project.short_description}</p>
+                            <Link to="/details" onClick={()=>handleDetail(project.id, project)} className="btn">More About this project</Link>
+                            <div className="card-actions justify-evenly mt-4">
+                                <a href={project.live_site} className="btn">Live Site</a>
+                                <a href={project.client_site} className="btn">FrontEnd</a>
+                                <a href={project.server_side} className="btn">BackEnd</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className="card w-full bg-base-100 shadow-xl">
-                    {/* <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure> */}
-                    <div className="card-body">
-                        <a href="https://cooking-corner-69041.web.app/" className="card-title">
-                            Cooking Corner
-                        </a>
-                        <p>This project is a cooking based project</p>
-                        <div className="btn">More About this project</div>
-                        <div className="card-actions justify-evenly mt-4">
-                            <a href='https://cooking-corner-69041.web.app/' className="btn">Live Site</a>
-                            <a href='https://github.com/ArkoRoyBadhon/Cooking-corner-client-public' className="btn">FrontEnd</a>
-                            <a href='https://github.com/ArkoRoyBadhon/Cooking-corner-server-public' className="btn ">BackEnd</a>
-                        </div>
-                    </div>
-                </div>
-                <div className="card w-full bg-base-100 shadow-xl">
-                    {/* <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure> */}
-                    <div className="card-body">
-                        <h2 className="card-title">
-                            Knowledge House
-                        </h2>
-                        <p>This project is a category wise education viewer website.</p>
-                        <div className="btn">More About this project</div>
-                        <div className="card-actions justify-evenly mt-4">
-                            <a href='https://knowledgehouse-6c03b.web.app/' className="btn">Live Site</a>
-                            <a href='https://github.com/ArkoRoyBadhon/Knowledge-house-client-public' className="btn">FrontEnd</a>
-                            <a href="https://github.com/ArkoRoyBadhon/Knowledge-house-server-public" className="btn ">BackEnd</a>
-                        </div>
-                    </div>
-                </div>
-                <div className="card w-full bg-base-100 shadow-xl">
-                    {/* <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure> */}
-                    <div className="card-body">
-                        <h2 className="card-title">
-                            Quiz Mania
-                        </h2>
-                        <p>This project is a quiz website. user can give a quiz in short question.</p>
-                        <div className="btn">More About this project</div>
-                        <div className="card-actions justify-evenly mt-4">
-                            <a href='https://quiz-mania-arko.netlify.app' className="btn">Live Site</a>
-                            <a href='https://github.com/ArkoRoyBadhon/quiz-mania-public' className="btn">FrontEnd</a>
-                        </div>
-                    </div>
-                </div>
+                    )
+
+                }
+
             </div>
         </div>
     );
